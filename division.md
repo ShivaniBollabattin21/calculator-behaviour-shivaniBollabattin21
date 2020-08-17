@@ -21,7 +21,7 @@ Scenario:  When operand 2 is not present.
 
   Given: The Calculator is ON .
 
-  When: The user enters only one operand and a '/' operator .
+  When: The user enters one operand and a '/' operator .
 
   Then: The result is an error message,
         user need to enter the values again .
@@ -33,7 +33,7 @@ Scenario: Recurring decimals .
   When: The user enters two numbers and a '/' operator
         and result is recurring number .
   
-  Then: The result is rounded up to 4 decimals .
+  Then: The result rounds up to 4 decimals .
 
 Scenario: Division by fractional operands .
 
@@ -44,9 +44,9 @@ Scenario: Division by fractional operands .
          a '/' operator .
 
   Then:  The result is either a decimal value or integer value
-         if decimal, it is rounded up to 4 decimals .
+         if decimal, it rounds up to 4 decimals .
 
-Scenario: Division of multiple numbers .
+Scenario: Division of more than two numbers .
 
   Given: The Calculator is ON .
 
