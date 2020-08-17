@@ -1,56 +1,88 @@
 
-# Division
+# Multiplication
 
-Scenario: Divide by zero .
+Scenario: Result overflow .
 
   Given: The Calculator is ON .
 
-  When: The user enters a number, zero and a '/' operator .
+  When:  The user enters two numbers and a '*' operator,
+         and the result exceeds.
 
-  Then: The result is an infinite value or an error message.
+  Then:  The result is an error message that result has exceeded the range,
+         user need to try again and enter smaller numbers .
+
+Scenario: Zero value multiplication .
+
+  Given: The Calculator is ON .
+
+  When: The user enters a number, zero and a '*' operator .
+
+  Then: The result is zero value .
   
-Scenario: when both operands are zero .
+Scenario: Multiplication by 1 .
 
   Given: The Calculator is ON .
 
-  When: The user enters both numbers as zero and  a '/' operator .
+  When: The user enters a number, 1 and a '*' operator .
 
-  Then: The result is an error message .
+  Then: The result is 1 .
   
-Scenario:  When operand 2 is not present.
+Scenario: Decimal value multiplication.
 
   Given: The Calculator is ON .
 
-  When: The user enters one operand and a '/' operator .
+  When: The user enters two or more decimal numbers and a '*' operator .
 
-  Then: The result is an error message,
-        user need to enter the values again .
+  Then: The result is product of numbers with precision
+        up to four decimal places .
   
-Scenario: Recurring decimals .
+Scenario: Irrational value multiplication .
 
   Given: The Calculator is ON .
 
-  When: The user enters two numbers and a '/' operator
-        and result is recurring number .
+  When: The user enters two irrational numbers and a '*' .
   
-  Then: The result rounds up to 4 decimals .
+  Then: The result is product of two irrational numbers
+        that is either rational or irrational .
 
-Scenario: Division by fractional operands .
-
-  Given: The Calculator is ON .
-
-  When:  The user enters two numbers
-         (if one of the operand or both operands are fractional)
-         a '/' operator .
-
-  Then:  The result is either a decimal value or integer value
-         if decimal, it rounds up to 4 decimals .
-
-Scenario: Division of more than two numbers .
+Scenario: Multiplication of two numbers .
 
   Given: The Calculator is ON .
 
-  When:  The user enters more than two numbers and '/' operator .
+  When:  The user enters two numbers and a '*' operator .
 
-  Then:  The result is either a decimal value or integer value
-         if decimal, it is rounded up to 4 decimals .
+  Then:  The result is product of two numbers .
+
+Scenario: Multiplication of rational numbers .
+
+  Given: The Calculator is ON .
+
+  When:  The user enters two rational numbers and '*' operator .
+
+  Then:  The result is product of two numbers and is a rational number .
+
+Scenario: Multiplication of decimal and integer numbers .
+
+  Given: The Calculator is ON .
+
+  When:  The user enters a decimal number,an integer and a '*' operator .
+  
+  Then:  The result is a decimal value up to four decimal places .
+
+Scenario: Range of operand exceeds .
+
+  Given: The Calculator is ON .
+
+  When:  The user enters two numbers(operands) and gives the '*' operator,
+         the operands exceed the specified range .
+  
+  Then:  The result is an error message and
+         user need to try again and enter smaller numbers(operands) .
+
+Scenario: Multiplication of more than two numbers .
+
+  Given: The Calculator is ON .
+
+  When:  The user enters more than two numbers and a '*' operator .
+  
+  Then:  The result is product of the numbers .
