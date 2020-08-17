@@ -61,7 +61,7 @@ Scenario: Addition of positive and negative numbers .
   When:  The user enters one positive number and a negative number
          along with the '+' operator .
 
-  Then:  The result is subraction of two numbers with a greater number sign .
+  Then:  The result is subtraction of two numbers with a greater number sign .
 
 Scenario: Addition of more than two numbers .
 
