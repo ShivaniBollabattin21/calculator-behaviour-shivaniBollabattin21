@@ -31,7 +31,7 @@ Scenario: The input is in wrong format ( 6 + * ) .
   Given: The Calculator is ON .
 
   When: The user gives input in wrong format like a single operand
-        and multiple operators, single operand and single operator .
+        and more than one operator, single operand and single operator .
 
   Then: The result is an error message.
         User need to enter the input parameters again .
