@@ -6,10 +6,10 @@ Scenario: Result overflow .
   Given: The Calculator is ON .
 
   When:  The user enters two numbers and a '*' operator,
-         and result is exceeded.
+         and the result exceeds.
 
   Then:  The result is an error message that result has exceeded the range,
-         user is asked to try again and enter smaller numbers .
+         user need to try again and enter smaller numbers .
 
 Scenario: Zero value multiplication .
 
@@ -77,7 +77,7 @@ Scenario: Range of operand exceeds .
          the operands exceed the specified range .
   
   Then:  The result is an error message and
-         user is asked to try again and enter smaller numbers(operands) .
+         user need to try again and enter smaller numbers(operands) .
 
 Scenario: Multiplication of more than two numbers .
 
