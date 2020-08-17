@@ -1,8 +1,12 @@
+
 # Addition
 
 Scenario: Addition of two postive numbers.
+
 Given: The Calculator is ON.
+
 When: The user enters two numbers and gives the + operator. 
+
 Then: The sum of two numbers is displayed. 
 
 Scenario: Addition of two negative numbers.
@@ -36,8 +40,3 @@ Given: The Calculator is ON
 When: The user gives two operands and an operator and the result exceeds the display range . 
   
 Then: An error message is displayed to user that result has exceeded and is asked to enter smaller numbers.
-  
-  
-  
-  
-  
