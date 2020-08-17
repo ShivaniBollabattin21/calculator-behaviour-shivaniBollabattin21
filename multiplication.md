@@ -33,7 +33,8 @@ Scenario: Decimal value multiplication.
 
   When: The user enters two or more decimal numbers and a '*' operator .
 
-  Then: The result is product of numbers with precision up to four decimal places .
+  Then: The result is product of numbers with precision
+        up to four decimal places .
   
 Scenario: Irrational value multiplication .
 
