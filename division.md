@@ -31,7 +31,7 @@ Scenario: Recurring decimals .
   Given: The Calculator is ON .
 
   When: The user enters two numbers and a '/' operator
-        and result is reccuring number .
+        and result is recurring number .
   
   Then: The result is rounded up to 4 decimals .
 
