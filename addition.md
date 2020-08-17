@@ -1,7 +1,7 @@
 
 # Addition
 
-Scenario: Addition of two postive numbers .  
+Scenario: Addition of two positive numbers .  
   Given: The Calculator is ON .
   When:  The user enters two numbers and gives the '+' operator .
   Then:  The sum of two numbers is displayed .
@@ -17,7 +17,7 @@ Scenario: when user enters multiple operators .
   Then: An error message is displayed to user and
         user is made to perform the operation again .
   
-Scenario: The input is in wrong format (6+*) .
+Scenario: The input is in wrong format (6 + *) .
   Given: The Calculator is ON .
   When: The user gives input in wrong format like a single operand
         and multiple operators, single operand and single operator .
