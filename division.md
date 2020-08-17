@@ -53,4 +53,4 @@ Scenario: Division of more than two numbers .
   When:  The user enters more than two numbers and '/' operator .
 
   Then:  The result is either a decimal value or integer value
-         if decimal, it is rounded up to 4 decimals .
+         if decimal, it rounds up to 4 decimals .
