@@ -2,11 +2,11 @@
 
 Scenario: Addition of two postive numbers.
   
-Given: The Calculator is ON.
+  Given: The Calculator is ON.
 
-When: The user enters two numbers and gives the + operator. 
+  When: The user enters two numbers and gives the + operator. 
   
-Then: The sum of two numbers is displayed. 
+  Then: The sum of two numbers is displayed. 
 
 Scenario: Addition of two negative numbers.
   
