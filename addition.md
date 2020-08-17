@@ -17,14 +17,14 @@ Scenario: Addition of two negative numbers .
 
   Then: The result is sum of two numbers with a negative sign .
   
-Scenario: when user enters multiple operators .
+Scenario: when user enters more than one operator .
 
   Given: The Calculator is ON .
 
-  When: The user gives multiple operator .
+  When: The user enters more than one operator .
 
   Then: The result is an error message and
-        user is asked to perform the operation again .
+        user need to perform the operation again .
   
 Scenario: The input is in wrong format ( 6 + * ) .
 
@@ -33,8 +33,8 @@ Scenario: The input is in wrong format ( 6 + * ) .
   When: The user gives input in wrong format like a single operand
         and multiple operators, single operand and single operator .
 
-  Then: An error message is displayed to user.
-        User is asked to enter the input parameters again .
+  Then: The result is an error message.
+        User need to enter the input parameters again .
   
 Scenario: Adding numbers where result goes out of range .
 
@@ -43,8 +43,8 @@ Scenario: Adding numbers where result goes out of range .
   When: The user enters two operands, an operator and
         the result exceeds the display range .
   
-  Then: An error message is displayed to user that result has exceeded and
-        is asked to enter smaller numbers .
+  Then: The result is an error message.
+        User need to enter smaller numbers .
 
 Scenario: Addition of fractions .
 
